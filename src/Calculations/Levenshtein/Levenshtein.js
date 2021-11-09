@@ -61,7 +61,7 @@ const Levenshtein = (props) => {
   //
   var finalMatrix2 = new Array(props.regex.length + 1);
   for (let i = 0; i < props.regex.length + 1; i++) {
-    finalMatrix2[i] = new Array(props.regex.length + 1).fill(0);
+    finalMatrix2[i] = new Array(props.target.length + 1).fill(0);
   }
   finalMatrix2[0][0] = "#";
   for (let i = 0; i < props.target.length; i++) {
